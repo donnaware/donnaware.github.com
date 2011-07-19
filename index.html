@@ -1,100 +1,128 @@
-<HTML>
-<HEAD>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
-<META NAME="Generator" CONTENT="Microsoft Word 97">
-<TITLE>Donna's  Resume</TITLE>
-<META NAME="subject" CONTENT="Resume">
-</HEAD>
-<BODY LINK="#0000ff" VLINK="#808000">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Generator" content="Microsoft Word 97">
+<title>Donna's  Resume</title>
+<meta name="subject" content="Resume">
+</head>
+<body link="#0000ff" vlink="#808000">
 
-<B><FONT FACE="Arial" SIZE=5><P>Donnaware International LLC</P>
-</B></FONT><FONT FACE="Arial" SIZE=2><P>The following is an outline of projects and areas of study that I have pursued either as part of a masters program or independently.   I have always been interested in electronics and science and have pursued these areas as a hobby.</P>
+<b><font face="Arial" size="5"><p>Donnaware International LLC</p>
+</b></font><font size="2"><p>The following is an outline of projects and areas of study that I have pursued either as part of a masters program or independently.   I have always been interested in electronics and science and have pursued these areas as a hobby.</p>
+</font><font face="Arial" size="2">
+</font><b><font face="Arial" size="3"><p>Project List:</p></b></font>
+<table BORDER =1 CELLSPACING=1 CELLPADDING=7 WIDTH=720>
+<tr><td width="33%" valign="top">
+<font face="Arial" size="2"><p><img src="Image11.gif" width="219" height="128"></p>
+</font><font face="CG Times (W1),Times New Roman" size="2"><p><img src="Image2.gif" width="208" height="146"></font></p></td>
+<td width="68%" valign="top">
+<b><font size="2"><p>The "zPhone Project":</b> The purpose of the 
+      "zPhone Project" is to create a hand held Ultra-Thin Client device 
+      operating over a wireless connection such as WiFi or 3G/4G high speed 
+      wireless. An Ultra-Thin Client (UTC) is a client implemented in hardware. 
+      A thin client has no intelligence or computing power of its own and hence, 
+      relies completely on it’s server for operation. </p>
+<p>The concept of a UTC is to implement the client completely in hardware, specifically an FPGA to reduce the cost and power consumption of the device. A hardware implementation reduces cost since no software licensing, operating system costs or programming costs are incurred for the device itself. </p>
+<p>The power consumption is reduced since there is no need for a high speed microprocessor and associated storage, memory and other support peripherals. The end result being that battery life is greatly enhanced. The highest power consumption is incurred from the RF section. For this project, an 802.11b mini-PCMIA interface card is selected. The 802.11b has reduced power consumption over 802.11g/n because b uses a CDMA air interface which has a much lower spectral density than the OFDMA scheme used by g/n.</p></font><font face="Arial" size="2"></font></td>
+</tr>
+<tr><td width="33%" valign="top">
+<font face="CG Times (W1),Times New Roman" size="2"><p><img src="Image3.gif" width="95" height="67"><img src="Image4.gif" width="99" height="75"></p><p><img src="Image5.gif" width="203" height="151"></p></font></td>
+<td width="68%" valign="top">
+<b><font size="2"><p>FPGA Based Software Defined Radio: </b>An FPGA 
+      consists of a large array of Logic Elements (LE). Each LE contains basic 
+      building block of digital logic circuits (AND, OR, Flip Flop, etc). These 
+      arrays can be in the range of 10K – 100K or more LE’s. Other types of 
+      blocks may also be on the FPGA chip such as dedicated multipliers 
+      (important for DSP applications) or RAM and sometimes embedded 
+      microprocessor (e.g. ARM). All of the blocks can be arbitrarily 
+      interconnected to each other via the re-programmable interconnection. The 
+      challenge for the designer is to determine the optimal way to interconnect 
+      these blocks to achieve the design goal. Many computer aided tools have 
+      been developed to assist in this effort. </p>
+<p>In this project, an SDR (Software Defined Radio) was simulated and synthesized using Verilog HDL and implemented in a prototype set up. The design demonstrated OFDM modulation scheme to transmit video images and further demonstrated that is software reconfigurable by altering in software to transmit NTSC video over standard broadcast.  This project was used for Masters EE program project.</p></font><font face="Arial" size="2"></font></td>
+</tr>
+<tr><td width="33%" valign="top">
+<font face="CG Times (W1),Times New Roman" size="2"><p>&nbsp;</p>
+<p><img src="Image12.gif" width="201" height="151"></p>
+</font></td>
+<td width="68%" valign="top">
+<b><font size="2"><p>Apollo Guidance Computer replica: </b>AGC 
+      implemented using an FPGA.</p></font><font face="CG Times (W1),Times New Roman" size="2"><p>The AGC (Apollo Guidance Computer) was a very early computer, designed in 1964, it was the first to use Integrated Circuits and the first modern embedded processor. When I was growing up, about 11 years old, I remember the Apollo program was fascinating to me and I had my eyes glued to the TV for days on end. The Moon landing made such a lasting impression on me that it is why I decided to go to engineering school and get a degree in Electrical Engineering. I used an FPGA (Field Programmable Gate Array) that can think of that as the equivalent of thousands of the TTL chips that is endlessly and completely reconfigurable.  I used the Altera Cyclone FPGA which has a lot of memory right on the FPGA.  I also developed the user interface using a custom LCD controller using a CLPD and a Microcontroller with a USB interface so code can be downloaded from your PC. </font><a href="https://github.com/donnaware/AGC"><font face="CG Times (W1),Times New Roman" size="2">https://github.com/donnaware/AGC</font></a></p></td>
+</tr>
+<tr><td width="33%" valign="top">
+<font face="CG Times (W1),Times New Roman" size="2"><p><img src="Image6.gif" width="212" height="141"></font></p></td>
+<td width="68%" valign="top">
+<b><font size="2"><p>The Zero Board Computer: </b>ZBC is a PC-XT SoC 
+      (System on a Chip) that is implemented on an Altera Cyclone III FPGA. ZBC 
+      is intended to be fun and educational and able to run DOS and uCLinux. The 
+      motivation for this project was to emulate the Intel 80186 CPU using 
+      Verilog HDL and to synthesis a working computer by utilizing custom and 
+      open source (</font><a href="http://www.opencores.org/"><font size="1">www.opencores.org</font></a><font size="2">) peripheral IP Cores (Intellectual Property) to form a complete bootable SoC. The completed project also implemented complete TCP/IP,UDP,HTTP,FTP,ARP,ICMP stack in a driver called TinySOCK developed by me. </font><a href="http://github.com/donnaware/ZBC---The-Zero-Board-Computer"><font face="CG Times (W1),Times New Roman" size="2">http://github.com/donnaware/ZBC---The-Zero-Board-Computer</font></a></p>
+<b><font size="2"></b></font></td>
+</tr>
+<tr><td width="33%" valign="top">
+<font face="Arial" size="2"><p><img src="Image7.gif" width="175" height="151"></font></p></td>
+<td width="68%" valign="top">
+<b><font size="2"><p>Roto-Cell 2000:</b> Roto-Cell is just a fun project 
+      that uses </font><font size="3">an old style Rotary Phone with the original internal electronic components removed and replaced with a small cell phone main board and a micro-controller to interface the old style dialer and ringer to the cell phone data interface.   For this project I used an old cell phone that I had laying around and an old timey rotary phone that I bought at a garage sale. The cell phone I used  is an LG VX3300 flip phone.  But you can probably use just about any more recent models.  Most cell phones have a "data Interface" that is basically an RS232 interface that uses the Modem "AT" command set to control it. </font></p></td>
+</tr>
+<tr><td width="33%" valign="top">
+<font face="CG Times (W1),Times New Roman" size="2"><p><img src="Image8.gif" width="46" height="46"><img src="Image9.gif" width="224" height="168"></p>
+</font><font face="Arial" size="2"></font></td>
+<td width="68%" valign="top">
+<b><font size="2"><p>Scanning Tunneling Microscope:</b> Scanning 
+      Tunneling Microscopy (STM) is a process by which atoms may be imaged using 
+      tunneling theory. STM involves the tunneling of electrons through gap from 
+      the tip of the STM to the sample. This can be considered as tunneling 
+      between two metallic electrodes, separated by a vacuum region. The 
+      potential in the vacuum region acts as a barrier to electrons. In this 
+      simplified form, one can apply the solution of the Schrodinger equation, 
+      applied to a rectangular barrier: psi = exp{kx}, where k = sqrt[2m(Vb - 
+      E)/(h2)] where, Vb represents the barrier potential, E is the energy of 
+      the particular state, and h corresponds to the reduced Planck constant. In 
+      General, the tunneling current through the vacuum is proportional to the 
+      separation between the tip and the sample. An atomically sharp tip is 
+      used, the tunneling current from the first atom of the tip can be 
+      determined while the tip is scanned using piezo-electric nano-positioning 
+      probe and the measured tunneling current is numerically processed to an 
+      image.</font></p></td>
+</tr>
+<tr><td width="33%" valign="top">
+<font face="Arial" size="2"><p><img src="Image10.gif" width="184" height="136"></font></p></td>
+<td width="68%" valign="top">
+<b><font size="2"><p>NetOpt</b> Network Optimization Platform and <b>NODAL</b> (Network Optimization, Design &amp; 
+      Analysis) Compiler (invented my own language). This is a software IDE 
+      platform specifically designed to explore network optimization algorithms. 
+      A specialized language was developed that allows quick implementation of 
+      various algorithms and also allows simple linking of C or C++ or other 
+      high level modules. </p></font></td>
+</tr>
+</table>
 
-</FONT><B><FONT FACE="Arial" SIZE=3><P>Project List:</P></B></FONT>
-<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=720>
-<TR><TD WIDTH="33%" VALIGN="TOP">
-<FONT FACE="Arial" SIZE=2><P><IMG SRC="Image11.gif" WIDTH=219 HEIGHT=128></P>
-</FONT><FONT FACE="CG Times (W1),Times New Roman" SIZE=2><P><IMG SRC="Image2.gif" WIDTH=208 HEIGHT=146></FONT></TD>
-<TD WIDTH="68%" VALIGN="TOP">
-<B><FONT FACE="Verdana" SIZE=2><P>The &quot;zPhone Project&quot;:</B> </FONT><FONT FACE="Arial" SIZE=2>The purpose of the &quot;zPhone Project&quot; is to create a hand held Ultra-Thin Client device operating over a wireless connection such as WiFi or 3G/4G high speed wireless. An Ultra-Thin Client (UTC) is a client implemented in hardware. A thin client has no intelligence or computing power of its own and hence, relies completely on it’s server for operation. </P>
+<font face="Arial" size="2"><p>&nbsp;</p>
+</font><b><font size="2"><p>List of other projects:</p><dir>
+<dir>
 
-<P>The concept of a UTC is to implement the client completely in hardware, specifically an FPGA to reduce the cost and power consumption of the device. A hardware implementation reduces cost since no software licensing, operating system costs or programming costs are incurred for the device itself. </P>
-
-<P>The power consumption is reduced since there is no need for a high speed microprocessor and associated storage, memory and other support peripherals. The end result being that battery life is greatly enhanced. The highest power consumption is incurred from the RF section. For this project, an 802.11b mini-PCMIA interface card is selected. The 802.11b has reduced power consumption over 802.11g/n because b uses a CDMA air interface which has a much lower spectral density than the OFDMA scheme used by g/n.</P>
-</FONT></TD>
-</TR>
-<TR><TD WIDTH="33%" VALIGN="TOP">
-<FONT FACE="CG Times (W1),Times New Roman" SIZE=2><P><IMG SRC="Image3.gif" WIDTH=95 HEIGHT=67><IMG SRC="Image4.gif" WIDTH=99 HEIGHT=75><IMG SRC="Image5.gif" WIDTH=203 HEIGHT=151></FONT></TD>
-<TD WIDTH="68%" VALIGN="TOP">
-<B><FONT FACE="Arial" SIZE=2><P>FPGA Based Software Defined Radio: </B>An FPGA consists of a large array of Logic Elements (LE). Each LE contains basic building block of digital logic circuits (AND, OR, Flip Flop, etc). These arrays can be in the range of 10K – 100K or more LE’s. Other types of blocks may also be on the FPGA chip such as dedicated multipliers (important for DSP applications) or RAM and sometimes embedded microprocessor (e.g. ARM). All of the blocks can be arbitrarily interconnected to each other via the re-programmable interconnection. The challenge for the designer is to determine the optimal way to interconnect these blocks to achieve the design goal. Many computer aided tools have been developed to assist in this effort. </P>
-<P>In this project, an SDR (Software Defined Radio) was simulated and synthesized using Verilog HDL and implemented in a prototype set up. The design demonstrated OFDM modulation scheme to transmit video images and further demonstrated that is software reconfigurable by altering in software to transmit NTSC video over standard broadcast.  This project was used for Masters EE program project.</P>
-</FONT></TD>
-</TR>
-<TR><TD WIDTH="33%" VALIGN="TOP">
-<FONT FACE="CG Times (W1),Times New Roman" SIZE=2><P><IMG SRC="Image6.gif" WIDTH=212 HEIGHT=141></FONT></TD>
-<TD WIDTH="68%" VALIGN="TOP">
-<B><FONT FACE="Arial" SIZE=2><P>The Zero Board Computer: </B></FONT><FONT FACE="Verdana" SIZE=2>ZBC is a PC-XT SoC (System on a Chip) that is implemented on an Altera Cyclone III FPGA. ZBC is intended to be fun and educational and able to run DOS and uCLinux. The motivation for this project was to emulate the Intel 80186 CPU using Verilog HDL and to synthesis a working computer by utilizing custom and open source (</FONT><A HREF="http://www.opencores.org/"><FONT FACE="Verdana" SIZE=1>www.opencores.org</FONT></A><FONT FACE="Verdana" SIZE=2>) peripheral IP Cores (Intellectual Property) to form a complete bootable SoC. The completed project also implemented complete TCP/IP,UDP,HTTP,FTP,ARP,ICMP stack in a driver called TinySOCK developed by me.</FONT></TD>
-</TR>
-<TR><TD WIDTH="33%" VALIGN="TOP">
-<FONT FACE="Arial" SIZE=2><P><IMG SRC="Image7.gif" WIDTH=175 HEIGHT=151></FONT></TD>
-<TD WIDTH="68%" VALIGN="TOP">
-<B><FONT FACE="Arial" SIZE=2><P>Roto-Cell 2000:</B> Roto-Cell is just a fun project that uses </FONT><FONT FACE="Arial" SIZE=3>an old style Rotary Phone with the original internal electronic components removed and replaced with a small cell phone main board and a micro-controller to interface the old style dialer and ringer to the cell phone data interface.   For this project I used an old cell phone that I had laying around and an old timey rotary phone that I bought at a garage sale. The cell phone I used  is an LG VX3300 flip phone.  But you can probably use just about any more recent models.  Most cell phones have a &quot;data Interface&quot; that is basically an RS232 interface that uses the Modem &quot;AT&quot; command set to control it. </FONT></TD>
-</TR>
-<TR><TD WIDTH="33%" VALIGN="TOP">
-<FONT FACE="CG Times (W1),Times New Roman" SIZE=2><P><IMG SRC="Image8.gif" WIDTH=46 HEIGHT=46><IMG SRC="Image9.gif" WIDTH=224 HEIGHT=168></P>
-</FONT><FONT FACE="Arial" SIZE=2></FONT></TD>
-<TD WIDTH="68%" VALIGN="TOP">
-<B><FONT FACE="Arial" SIZE=2><P>Scanning Tunneling Microscope:</B> Scanning Tunneling Microscopy (STM) is a process by which atoms may be imaged using tunneling theory. STM involves the tunneling of electrons through gap from the tip of the STM to the sample.  This can be considered as tunneling between two metallic electrodes, separated by a vacuum region. The potential in the vacuum region acts as a barrier to electrons. In this simplified form, one can apply the solution of the Schrodinger equation, applied to a rectangular barrier: psi = exp{kx}, where  k = sqrt[2m(Vb - E)/(h2)] where, Vb represents the barrier potential, E is the energy of the particular state, and h corresponds to the reduced Planck constant. In General, the tunneling current through the vacuum is proportional to the separation between the tip and the sample. An atomically sharp tip is used, the tunneling current from the first atom of the tip can be determined while the tip is scanned using piezo-electric nano-positioning probe and the measured tunneling current is numerically processed to an image.</FONT></TD>
-</TR>
-<TR><TD WIDTH="33%" VALIGN="TOP">
-<FONT FACE="Arial" SIZE=2><P><IMG SRC="Image10.gif" WIDTH=184 HEIGHT=136></FONT></TD>
-<TD WIDTH="68%" VALIGN="TOP">
-<B><FONT FACE="Arial" SIZE=2><P>NetOpt</B> Network Optimization Platform and <B>NODAL</B> (Network Optimization, Design &amp; Analysis) Compiler (invented my own language). This is a software IDE platform specifically designed to explore network optimization algorithms. A specialized language was developed that allows quick implementation of various algorithms and also allows simple linking of C or C++ or other high level modules. </P>
-</FONT></TD>
-</TR>
-</TABLE>
-
-<FONT FACE="Arial" SIZE=2><P>&nbsp;</P>
-<B><P>List of other projects:</P><DIR>
-<DIR>
-
-</B><P>Apollo 11 Automatica Guidance Computer replicated using FPGA<BR>
-Embedded Micro-sequencer (FPGA CPU emulation)<BR>
-ElectroSketch 2000 – portable electronic sketch device<BR>
-FPGA Prototype boards<BR>
-FPGA Based General Purpose Graphic LCD Driver<BR>
-Microcontroller Ultrasonic distance measurement device<BR>
-Video Frame Grabber<BR>
-Video Generator<BR>
-Telescope CCD <BR>
-Computer controlled HeNe Laser<BR>
-Micro-controlled Laser diode driver<BR>
-CCD Linear Scanner<BR>
-Microcontroller based Sunrise Sunset Timer (turn lights on and off based on calculated position of the sun)<BR>
-USB Microcontroller interface<BR>
-Microcontroller VGA generator<BR>
-Microcontroller FM Radio <BR>
-Microcontroller TV Tuner<BR>
-Homebrew MP3 Player<BR>
-78RPM MP3 Ripper<BR>
-Pong implemented in an FPGA<BR>
-Topographic Data viewer<BR>
-Harmonograph Simulator<BR>
-LatLon to V&amp;H Converter<BR>
-Dterm – RS232 &amp; Telnet Terminal emulator<BR>
-Mp3 Player<BR>
-Chess Engine (Chess game)<BR>
-Black hole simulator, Code edit</FONT><FONT FACE="CG Times (W1),Times New Roman" SIZE=2>or, <BR>
-</FONT><FONT FACE="Arial" SIZE=2>&quot;Spread grid&quot; Spreadsheet Program<BR>
-PC based Tone Generator<BR>
-PC based Oscilloscope<BR>
-ErlangB calculator<BR>
-Disk Viewer<BR>
-Global Temperature viewer<BR>
-WMAP data viewer</P>
-</DIR>
-</DIR>
-
-<B><P>This list can go on and on...</P>
-</B></FONT><FONT FACE="CG Times (W1),Times New Roman" SIZE=2></FONT></BODY>
-</HTML>
+</b><p>Apollo 11 Automatica Guidance Computer replicated using FPGA<br>
+Embedded Micro-sequencer (FPGA CPU emulation)<br>
+ElectroSketch 2000 – portable electronic sketch device<br>
+FPGA Prototype boards<br>
+FPGA Based General Purpose Graphic LCD Driver<br>
+Microcontroller Ultrasonic distance measurement device<br>
+Video Frame 
+Grabber<br>Video Generator<br>Telescope CCD <br>Computer controlled HeNe 
+Laser<br>Micro-controlled Laser diode driver<br>CCD Linear 
+Scanner<br>Microcontroller based Sunrise Sunset Timer (turn lights on and off 
+based on calculated position of the sun)<br>USB Microcontroller 
+interface<br>Microcontroller VGA generator<br>Microcontroller FM Radio 
+<br>Microcontroller TV Tuner<br>Homebrew MP3 Player<br>78 RPM MP3 Ripper<br>Pong 
+implemented in an FPGA<br>Topographic Data viewer<br>Harmonograph 
+Simulator<br>LatLon to V&amp;H Converter<br>Dterm – RS232 &amp; Telnet Terminal 
+emulator<br>Mp3 Player<br>Chess Engine (Chess game)<br>Black hole simulator, 
+Code editor, <br>"Spread grid" Spreadsheet Program<br>PC based Tone 
+Generator<br>PC based Oscilloscope<br>ErlangB calculator<br>Disk 
+Viewer<br>Global Temperature viewer<br>
+WMAP data viewer</p></dir></dir>
+<b><p>This list can go on and on...</p>
+</b></font><font face="CG Times (W1),Times New Roman" size="2"></font></body>
+</html>
