@@ -1,273 +1,308 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="Generator" content="None">
-<title>Donna's Vita</title>
-<meta name="subject" content="Donna's Vita">
-</head>
-<body link="#0000ff" vlink="#808000">
-<!-- Last updated 10/23/2012 10:55PM -->
-<b><font face="Arial" size="5"><p>Donnaware International LLC</p></b></font>
-<font size="2">
-    <p>The following is an outline of projects and areas of study that I have pursued 
-    either as part of a masters program or independently.<br>   
-    I have always been interested in electronics and science and have pursued these areas as a hobby for many years.</p>
-</font
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Donnaware</title>
+	
+	<style type="text/css" media="screen">
+		html, body 		{ margin: 0; padding: 0; }
+		body 			{ color: #333; font: 12px Helvetica, Arial, sans-serif; line-height: 18px; }
+		h2				{ color: #333; }
+		a				{ color: #337810; }
+		p				{ margin: 0 0 18px; }
+		#container		{ width: 760px; margin: 0 auto; }
+		
+		/* Header */
+		#header			{ background: #eee; border-bottom: 2px solid #ddd; }
+		#header h1  	{ color: #004b6f; margin: 0 0 3px; padding: 24px 18px 0; }
+		#header p		{ color: #666; font-size: 11px; font-weight: bold; padding: 0 18px; }
+		
+		/* Content Style */
+		#navigation		{ border-bottom: 1px solid #ccc; margin-left: 18px; }
+		#navigation ul	{ padding: 0 18px 9px; }
+		#extra			{  }
+		#extra small	{ font-size: 11px; line-height: 18px; }
+		#content		{ border-bottom: 1px solid #ccc; margin-bottom: 18px; }
+		#content p, #extra p { padding-right: 18px; }
+		
+		/* Content Positioning and Size */
+		#navigation		{ float: left; width: 175px; }
+		#content		{ float: right; width: 540px; }
+		#extra			{ float: right; width: 540px; }		/* Footer */
+		#footer			{ background: #333; border-bottom: 2px solid #999; clear: both; }
+		#footer a		{ color: #eee; }
+		#footer	p		{ color: #ccc; margin: 0; padding: 0 18px 10px; }
+		#footer ul		{ border-bottom: 1px solid #555; list-style: none; margin: 0 18px 6px; padding: 10px 0 6px; }
+		#footer li		{ display: inline; font-size: 11px; font-weight: bold; padding-right: 5px; }
+	</style>
+	<!--[if IE]>
+	<style type="text/css">
+	    #header { margin-bottom: 20px; }
+	</style>
+	<![endif]-->
+</head><body>
+	<div id="container">
+		<div id="header">
+			<h1>Donnaware International LLC</h1>
+			<p class="description">Dedicated to all things hackable.</p>
+		</div>
+		<div id="wrapper">
+			<div id="content">
+				<h2>Donnaware Projects:</h2>
+    			<p>This site contains summary information regarding various projects, inventions and interesting
+				   products developed by Donnaware International LLC. A few selected projects contain links to complete
+				   source code and hardware specifics if applicable. Detailed information is not provided for all 
+				   projects partly because it would take up way to much space and exceed the freebie limit on Github
+				   but mostly because I am too lazy to post everything. </p>
+				</div>
+		</div>
+		<div id="navigation">
+			<h2>Projects:</h2>
+			<ul>
+				<li><a href="#yPU_SoC">yPU Synthetic SoC</a></li>
+				<li><a href="#Modapter">Modapter</a></li>
+				<li><a href="#TabX1">TabX1 Open Tablet</a></li>
+				<li><a href="#zPhone">zPhone (cloud Phone)</a></li>
+				<li><a href="#4GELDK">4G-LTE SDK</a></li>
+				<li><a href="#FPGASDR">Software Defined Radio</a></li>
+				<li><a href="#Apollo">Apollo Computer Replica</a></li>
+				<li><a href="RotoCell">Wireless Rotary Phone</a></li>
+				<li><a href="STM">Scanning Tunneling Microscope</a></li>
+				<li><a href="NetOpt">Network Optimization Platform</a></li>
+				<li><a href="Other">Other Stuff</a></li>
+				
+			</ul>
+		</div>
+		<div id="extra">
+			<a name="yPU_SoC"></a>
+			<h2>The yPU Synthetic SoC</h2>
+			<p><img src="yPU1.jpg" width="210" height="151" align="left" style="margin: 0px 10px 0px 0px;" >
+			The yPU is a Synthetic System on a Chip is something I have 
+			been working on for a long time, it is a complete computer on an FPGA that can be synthisized, 
+			that is to say, compiled after using a super simple, user friendly GUI to pick all the peripherals
+			that you want on your SoC. You simply drag and drop the desired resources to your target, compile and download
+			and you have the perfect chip for you app. You want 16 RS232 ports, 8 PWM ports, whatever combo you need can be
+			configured specifically for your app. The CPU is the ubiquotous 80186 core, but could be adapted to any. The 
+			peripherals can be any Wishbone compatible IP cores, e.g. LCD driver, Touchscreen, Mouse, Keyboard, 100BaseT, 
+			USB Host port, Wifi, 4G wireless, audio driver, PWM, RS232 ports, GPIO lines, SPI interface, system RAM, 
+			SD card, graphics RAM, etc. (sorry no github files yet, waiting on some legalities).
+			<br/>		
 
-><font face="Arial" size="2">
-</font><b><font face="Arial" size="3"><p>Project List:</p></b></font>
+			<hr/>			
+			<a name="Modapter"></a>
+			<h2>The Modapter</h2>
+			<p><img src="modapter.jpg" width="210" height="151" align="left" style="margin: 0px 10px 0px 0px;" >
+			The Modapter is a wireless modem adapter that allows 
+			you to plug in any USB based wireless modem, 4G, 4G LTE, GSM, GPRS, CDMA and etc. and integrate
+			that device into your MCU project even if your MCU does not have an OS or any USB drivers.
+			The Modapter uses the same type of driver as typical Linux boards or Windows based computers
+			use to interface with Wireless Modems but does not require the user to take on the task of 
+			installing managing a full blown Linux Operating System. Instead, with Modapter, most of the 
+			work is done for you, on the Modapter chip, so you can get your project up and on the Mobile 
+			Internet as quicly as possible without fussing with Linux or other operating systems, drivers 
+			or complexities.
+			The Modapter sits between your MCU project and the Wireless Modem and provides a simple interface 
+			to send and receive data over the internet.
+			<br><br>			
 
-<table BORDER =1 CELLSPACING=1 CELLPADDING=7 WIDTH=720>
+			<hr/>			
+			<a name="TabX1"></a>
+			<h2>TabX1 Open Tablet Project</h2>
+			<p><img src="board.jpg" width="210" height="170" align="left" style="margin: 0px 10px 0px 0px;">
+			TabX1 is my attempt at creating 
+			a cool Linux based tablet computer. The idea behind it is to create a functional
+			tablet at a very low cost using a low cost low power SoC ARM chip and de-load
+			much of the processing to an attached FPGA chip. <br><br>TabX1 is running Linux 2.6.36 
+			with Busybox Filesystem, X11 Xwindows, Fluxbox desktop and I am using Rox Filer 
+			and Netsurf browser. It has 5.7" Color LCD display with Touchscreen, Mouse, Keyboard,
+			100BaseT, USB Host port, Wifi, 4G wireless, custom graphics driver (implemented on
+			FPGA along with custom audio driver on FPGA), USB device, 4 RS232 ports, 32 GPIO lines
+			Accellerometer, RTC, 64MBytes system RAM, SD card for disk, 8MB graphics RAM, etc 
+			etc..
+			For more information and technical details, visit:
+			<a href="https://github.com/donnaware/TabX1">https://github.com/donnaware/TabX1</a></p>			
+			<br><br>
 
-<tr><td width="33%" valign="top" bgcolor="#dddddd">
-<font face="Arial" size="2">
-<p><img src="yPU1.jpg" width="210" height="151"></p>
-</font><font face="CG Times (W1),Times New Roman" size="2"><p></font></p></td>
-<td width="68%" valign="top">
-<b><font size="2"><p>yPU the "Synthetic SoC":</b> The yPU is a Synthetic System on a Chip is something I have 
-been working on for a long time, it is a complete computer on an FPGA that can be synthisized, 
-that is to say, compiled after using a super simple, user friendly GUI to pick all the peripherals
-that you want on your SoC. You simply drag and drop the desired resources to your target, compile and download
-and you have the perfect chip for you app. You want 16 RS232 ports, 8 PWM ports, whatever combo you need can be
-configured specifically for your app. The CPU is the ubiquotous 80186 core, but could be adapted to any. The 
-peripherals can be any Wishbone compatible IP cores, e.g. LCD driver, Touchscreen, Mouse, Keyboard, 100BaseT, 
-USB Host port, Wifi, 4G wireless, audio driver, PWM, RS232 ports, GPIO lines, SPI interface, system RAM, 
-SD card, graphics RAM, etc. (sorry no github files yet, waiting on some legalities).
-<br><br>
-</tr>
+			<hr/>				
+			<a name="zPhone"></a>
+			<h2>The "zPhone Project"</h2>
+			<p><img src="Image11.gif" width="219" height="128">
+			<img src="Image2.gif"  width="208" height="146"></p>
+			<p>The purpose of the "zPhone Project" is to create a hand held Ultra-Thin Client device 
+      		operating over a wireless connection such as WiFi or 3G/4G high speed 
+			wireless. An Ultra-Thin Client (UTC) is a client implemented in hardware. 
+      		A thin client has no intelligence or computing power of its own and hence, 
+      		relies completely on it’s server for operation. </p>
+      		<p>The concept of a UTC is to implement the client completely in hardware, 
+	  		specifically an FPGA to reduce the cost and power consumption of the device.
+	  		A hardware implementation reduces cost since no software licensing, 
+	  		operating system costs or programming costs are incurred for the device itself. </p>
+      		<p>The power consumption is reduced since there is no need for a high speed 
+	  		microprocessor and associated storage, memory and other support peripherals.
+	  		The end result being that battery life is greatly enhanced. The highest power 
+	  		consumption is incurred from the RF section. For this project, an 802.11b 
+	  		mini-PCMIA interface card is selected. The 802.11b has reduced power consumption 
+	  		over 802.11g/n because b uses a CDMA air interface which has a much lower 
+	  		spectral density than the OFDMA scheme used by g/n.</p>			
+			<br><br>
+			
+			<hr/>				
+			<a name="4GELDK"></a>
+			<h2>4G LTE Embedded Linux Developers Kit</h2>
+			<p><img src="linuxboard.jpg" width="184" height="136" align="left" style="margin: 0px 10px 0px 0px;">
+			A Rapid Development and Delivery platform for 4G wireless embedded applications based on 
+			Open Source / Open Hardware embedded Linux Debian Distro running on an Industry Standard
+			ARM9 CPU. provides simple PHP, WEB back end to ease development.</p>
+			<br><br>
 
-<tr><td width="33%" valign="top" bgcolor="#dddddd">
-<font face="Arial" size="2">
-<p><img src="modapter.jpg" width="210" height="151"></p>
-</font><font face="CG Times (W1),Times New Roman" size="2"><p></font></p></td>
-<td width="68%" valign="top">
-<b><font size="2"><p>The Modapter:</b> The Modapter is a wireless modem adapter that allows 
-you to plug in any USB based wireless modem, 4G, 4G LTE, GSM, GPRS, CDMA and etc. and integrate
-that device into your MCU project even if your MCU does not have an OS or any USB drivers.
-The Modapter uses the same type of driver as typical Linux boards or Windows based computers
-use to interface with Wireless Modems but does not require the user to take on the task of 
-installing managing a full blown Linux Operating System. Instead, with Modapter, most of the 
-work is done for you, on the Modapter chip, so you can get your project up and on the Mobile 
-Internet as quicly as possible without fussing with Linux or other operating systems, drivers 
-or complexities.
-The Modapter sits between your MCU project and the Wireless Modem and provides a simple interface to send and receive data over the internet.
-<br><br>
-</tr>
+			<hr/>				
+			<a name="FPGASDR"></a>
+			<h2>FPGA Based Software Defined Radio</h2>
+			<p><img src="Image5.png" width="203" height="151">
+			<img src="Image3.gif" width="95" height="67">
+			<img src="Image4.gif" width="99" height="75">
+			</p>
+			<p>An FPGA consists of a large array of Logic Elements (LE). Each LE contains basic 
+      		building block of digital logic circuits (AND, OR, Flip Flop, etc). These 
+      		arrays can be in the range of 10K – 100K or more LE’s. Other types of 
+      		blocks may also be on the FPGA chip such as dedicated multipliers 
+      		(important for DSP applications) or RAM and sometimes embedded 
+      		microprocessor (e.g. ARM). All of the blocks can be arbitrarily 
+      		interconnected to each other via the re-programmable interconnection. The 
+      		challenge for the designer is to determine the optimal way to interconnect 
+      		these blocks to achieve the design goal. Many computer aided tools have 
+      		been developed to assist in this effort. </p>
+      		<p>In this project, an SDR (Software Defined Radio) was simulated and synthesized 
+	  		using Verilog HDL and implemented in a prototype set up. The design demonstrated 
+	  		OFDM modulation scheme to transmit video images and further demonstrated that is
+	  		software reconfigurable by altering in software to transmit NTSC video over standard 
+	  		broadcast.  This project was used for Masters EE program project.</p>
 
-<tr><td width="33%" valign="top" bgcolor="#dddddd">
-<font face="Arial" size="2">
-<p><img src="board.jpg" width="210" height="170"></p>
-</font><font face="CG Times (W1),Times New Roman" size="2"><p><img src="flux.jpg" width="208" height="146"></font></p></td>
-<td width="68%" valign="top">
-<b><font size="2"><p>The "TabX1 Project":</b> TabX1 is my attempt at creating 
-a cool Linux based tablet computer. The idea behind it is to create a functional
-tablet at a very low cost using a low cost low power SoC ARM chip and de-load
-much of the processing to an attached FPGA chip. <br><br>TabX1 is running Linux 2.6.36 
-with Busybox Filesystem, X11 Xwindows, Fluxbox desktop and I am using Rox Filer 
-and Netsurf browser. It has 5.7" Color LCD display with Touchscreen, Mouse, Keyboard,
-100BaseT, USB Host port, Wifi, 4G wireless, custom graphics driver (implemented on
-FPGA along with custom audio driver on FPGA), USB device, 4 RS232 ports, 32 GPIO lines
-Accellerometer, RTC, 64MBytes system RAM, SD card for disk, 8MB graphics RAM, etc 
-etc..<br><br>
-For more information and technical details, visit:
-      </font><a href="https://github.com/donnaware/TabX1">
-	  <font face="CG Times (W1),Times New Roman" size="2">https://github.com/donnaware/TabX1</font></a></p></td>
-</tr>
+			<hr/>				
+			<a name="Apollo"></a>
+			<h2>Apollo Guidance Computer Replica</h2>
+			<p><img src="Image12.jpg" width="201" height="151"></p>
+			<p>The AGC (Apollo Guidance Computer) was a very early computer, designed in 1964, it was 
+	  		the first to use Integrated Circuits and the first modern embedded processor. When I was 
+	  		growing up, about 11 years old, I remember the Apollo program was fascinating to me and 
+	  		I had my eyes glued to the TV for days on end. The Moon landing made such a lasting 
+	  		impression on me that it is why I decided to go to engineering school and get a degree 
+	  		in Electrical Engineering. I used an FPGA (Field Programmable Gate Array) that can think 
+	  		of that as the equivalent of thousands of the TTL chips that is endlessly and completely 
+	  		reconfigurable.  I used the Altera Cyclone FPGA which has a lot of memory right on the FPGA. 
+	  		I also developed the user interface using a custom LCD controller using a CLPD and a 
+	  		Microcontroller with a USB interface so code can be downloaded from your PC. 
+     		<a href="https://github.com/donnaware/AGC">https://github.com/donnaware/AGC</a></p>
 
-<tr><td width="33%" valign="top" bgcolor="#dddddd">
-<font face="Arial" size="2">
-<p><img src="Image11.gif" width="219" height="128"></p>
-</font><font face="CG Times (W1),Times New Roman" size="2"><p><img src="Image2.gif" width="208" height="146"></font></p></td>
-<td width="68%" valign="top">
-<b><font size="2"><p>The "zPhone Project":</b> The purpose of the 
-      "zPhone Project" is to create a hand held Ultra-Thin Client device 
-      operating over a wireless connection such as WiFi or 3G/4G high speed 
-      wireless. An Ultra-Thin Client (UTC) is a client implemented in hardware. 
-      A thin client has no intelligence or computing power of its own and hence, 
-      relies completely on it’s server for operation. </p>
-      <p>The concept of a UTC is to implement the client completely in hardware, 
-	  specifically an FPGA to reduce the cost and power consumption of the device.
-	  A hardware implementation reduces cost since no software licensing, 
-	  operating system costs or programming costs are incurred for the device itself. </p>
-      <p>The power consumption is reduced since there is no need for a high speed 
-	  microprocessor and associated storage, memory and other support peripherals.
-	  The end result being that battery life is greatly enhanced. The highest power 
-	  consumption is incurred from the RF section. For this project, an 802.11b 
-	  mini-PCMIA interface card is selected. The 802.11b has reduced power consumption 
-	  over 802.11g/n because b uses a CDMA air interface which has a much lower 
-	  spectral density than the OFDMA scheme used by g/n.</p></font>
-	  <font face="Arial" size="2"></font></td>
-</tr>
+			<hr/>				
+			<a name="ZBC"></a>
+			<h2>The Zero Board Computer</h2>
+			<p><img src="Image6.gif" width="212" height="141"></p>
+			<p>ZBC is a PC-XT SoC (System on a Chip) that is implemented on an Altera Cyclone III FPGA. ZBC 
+      		is intended to be fun and educational and able to run DOS and uCLinux. The 
+      		motivation for this project was to emulate the Intel 80186 CPU using 
+      		Verilog HDL and to synthesis a working computer by utilizing custom and 
+      		open source (<a href="http://www.opencores.org/">www.opencores.org</a>
+	  		peripheral IP Cores (Intellectual Property) to form a complete bootable SoC. 
+	  		The completed project also implemented complete TCP/IP,UDP,HTTP,FTP,ARP,ICMP 
+	  		stack in a driver called TinySOCK developed by me. 
+	  		<a href="http://github.com/donnaware/ZBC---The-Zero-Board-Computer">http://github.com/donnaware/ZBC---The-Zero-Board-Computer</font></a>
+			</p>
 
-<tr><td width="33%" valign="top" bgcolor="#dddddd">
-<font face="Arial" size="2">
-<p><img src="linuxboard.jpg" width="184" height="136"></font></p></td>
-<td width="68%" valign="top">
-<b><font size="2"><p>4G LTE Embedded Linux Developers Kit (4GELDK): </b><p> A Rapid Development and 
-Delivery platform for 4G wireless embedded applications based on Open Source / Open Hardware embedded Linux Debian 
-Distro running on an Industry Standard ARM9 CPU. provides simple PHP, WEB back end to ease development. </p></font></td>
-</tr>
+			<hr/>	
+			<a name="RotoCell"></a>						
+			<h2>Roto-Cell 2000:</h2>
+			<p><img src="Image7.gif" width="175" height="151"></p>
+			<p>The Roto-Cell 2000 is just a fun project that uses an old style Rotary 
+			Phone with the original internal components removed and replaced with a cell phone bluetooth 
+			adapter mounted on a PCB board and a micro-controller to interface the old style dialer and 
+			ringer. The microcontroller translates the rotary dialed digits into RS232 commands that are 
+			sent to the Bluetooth adapter to make a call and also receives messages from the Bluetooth adapter
+			when a call comes in and rings the ringer. The Audio interface converts the old style carbon
+			mic in the phone to the necessary levels to interface to the Bluetooth Module. You just pair
+			it with whatever cell phone you want, you put your phone in your pocket and now you have yourself
+			a wireless Rotary phone! For this project I used an old timey rotary phone that I bought at a 
+			garage sale, but I have also seen them available online.  
+			</p>
 
-<tr><td width="33%" valign="top" bgcolor="#dddddd">
-<font face="CG Times (W1),Times New Roman" size="2">
-<p><img src="Image3.gif" width="95" height="67"><img src="Image4.gif" width="99" height="75"></p>
-<p><img src="Image5.png" width="203" height="151"></p></font></td>
-<td width="68%" valign="top">
-<b><font size="2"><p>FPGA Based Software Defined Radio: </b>An FPGA 
-      consists of a large array of Logic Elements (LE). Each LE contains basic 
-      building block of digital logic circuits (AND, OR, Flip Flop, etc). These 
-      arrays can be in the range of 10K – 100K or more LE’s. Other types of 
-      blocks may also be on the FPGA chip such as dedicated multipliers 
-      (important for DSP applications) or RAM and sometimes embedded 
-      microprocessor (e.g. ARM). All of the blocks can be arbitrarily 
-      interconnected to each other via the re-programmable interconnection. The 
-      challenge for the designer is to determine the optimal way to interconnect 
-      these blocks to achieve the design goal. Many computer aided tools have 
-      been developed to assist in this effort. </p>
-      <p>In this project, an SDR (Software Defined Radio) was simulated and synthesized 
-	  using Verilog HDL and implemented in a prototype set up. The design demonstrated 
-	  OFDM modulation scheme to transmit video images and further demonstrated that is
-	  software reconfigurable by altering in software to transmit NTSC video over standard 
-	  broadcast.  This project was used for Masters EE program project.</p>
-	  </font><font face="Arial" size="2"></font></td>
-</tr>
+			<hr/>	
+			<a name="STM"></a>						
+			<h2>Scanning Tunneling Microscope:</h2>
+			<p><img src="Image9.png" width="224" height="168"></p>
+			<p><img src="Image8.gif" width="46" height="46"></p>
+			<p><b>Scanning Tunneling Microscopy (STM)</b> is a device by which atoms may be imaged using 
+      		Quantum Tunneling. STM involves the tunneling of electrons through gap from the tip of the 
+			STM to the sample. This can be considered as tunneling between two metallic electrodes, 
+			separated by a vacuum region. The potential in the vacuum region acts as a barrier to electrons. In this 
+      		simplified form, one can apply the solution of the Schrodinger equation, 
+      		applied to a rectangular barrier: psi = exp{kx}, 
+			where k = sqrt[2m(Vb - E)/(h2)] where, Vb represents the barrier potential, E is the energy of 
+			the particular state, and h corresponds to the reduced Planck constant. In 
+      		General, the tunneling current through the vacuum is proportional to the 
+      		separation between the tip and the sample. An atomically sharp tip is 
+      		used, the tunneling current from the first atom of the tip can be 
+      		determined while the tip is scanned using piezo-electric nano-positioning 
+      		probe and the measured tunneling current is numerically processed to an 
+      		image.</p>
 
-<tr><td width="33%" valign="top" bgcolor="#dddddd">
-<font face="CG Times (W1),Times New Roman" size="2"><p>&nbsp;</p>
-<p><img src="Image12.jpg" width="201" height="151"></p>
-</font></td>
-<td width="68%" valign="top">
-<b><font size="2"><p>Apollo Guidance Computer replica: </b>AGC 
-      implemented using an FPGA.</p></font><font face="CG Times (W1),Times New Roman" size="2">
-	  <p>The AGC (Apollo Guidance Computer) was a very early computer, designed in 1964, it was 
-	  the first to use Integrated Circuits and the first modern embedded processor. When I was 
-	  growing up, about 11 years old, I remember the Apollo program was fascinating to me and 
-	  I had my eyes glued to the TV for days on end. The Moon landing made such a lasting 
-	  impression on me that it is why I decided to go to engineering school and get a degree 
-	  in Electrical Engineering. I used an FPGA (Field Programmable Gate Array) that can think 
-	  of that as the equivalent of thousands of the TTL chips that is endlessly and completely 
-	  reconfigurable.  I used the Altera Cyclone FPGA which has a lot of memory right on the FPGA. 
-	  I also developed the user interface using a custom LCD controller using a CLPD and a 
-	  Microcontroller with a USB interface so code can be downloaded from your PC. 
-      </font><a href="https://github.com/donnaware/AGC">
-	  <font face="CG Times (W1),Times New Roman" size="2">https://github.com/donnaware/AGC</font></a></p></td>
-</tr>
+			<hr/>	
+			<a name="NetOpt"></a>							
+			<h2>NetOpt &ndash; Network Optimization Platform:</h2>
+			<p><img src="Image10.gif" width="184" height="136"></p>
+			<p><b>NetOpt</b> Network Optimization Platform and <b>NODAL</b> (Network Optimization, Design &amp; 
+    		Analysis) Compiler (invented my own language). This is a software IDE 
+    		platform specifically designed to explore network optimization algorithms. 
+    		A specialized language was developed that allows quick implementation of 
+    		various algorithms and also allows simple linking of C or C++ or other 
+    		high level modules. </p>
 
-<tr><td width="33%" valign="top" bgcolor="#dddddd">
-<font face="CG Times (W1),Times New Roman" size="2"><p><img src="Image6.gif" width="212" height="141"></font></p></td>
-<td width="68%" valign="top">
-<b><font size="2"><p>The Zero Board Computer: </b>ZBC is a PC-XT SoC 
-      (System on a Chip) that is implemented on an Altera Cyclone III FPGA. ZBC 
-      is intended to be fun and educational and able to run DOS and uCLinux. The 
-      motivation for this project was to emulate the Intel 80186 CPU using 
-      Verilog HDL and to synthesis a working computer by utilizing custom and 
-      open source (</font><a href="http://www.opencores.org/">
-      <font size="1">www.opencores.org</font></a><font size="2">) 
-	  peripheral IP Cores (Intellectual Property) to form a complete bootable SoC. 
-	  The completed project also implemented complete TCP/IP,UDP,HTTP,FTP,ARP,ICMP 
-	  stack in a driver called TinySOCK developed by me. </font>
-	  <a href="http://github.com/donnaware/ZBC---The-Zero-Board-Computer">
-	  <font face="CG Times (W1),Times New Roman" size="2">http://github.com/donnaware/ZBC---The-Zero-Board-Computer</font></a></p>
-<b><font size="2"></b></font></td>
-</tr>
 
-<tr><td width="33%" valign="top"bgcolor="#dddddd">
-<font face="Arial" size="2"><p><img src="Image7.gif" width="175" height="151"></font></p></td>
-<td width="68%" valign="top">
-<b><font size="2"><p>Roto-Cell 2000:</b> Roto-Cell is just a fun project 
-      that uses </font><font size="2">an old style Rotary Phone with the original internal 
-	  electronic components removed and replaced with a small cell phone main board and a 
-	  micro-controller to interface the old style dialer and ringer to the cell phone data 
-	  interface.   For this project I used an old cell phone that I had laying around and 
-	  an old timey rotary phone that I bought at a garage sale. The cell phone I used  
-	  is an LG VX3300 flip phone.  But you can probably use just about any more recent 
-	  models.  Most cell phones have a "data Interface" that is basically an RS232 interface 
-	  that uses the Modem "AT" command set to control it. </font></p></td>
-</tr>
+			<hr/>	
+			<a name="Other"></a>				
+			<h2>Other stuff:</h2>
+			<p>There are a ton of other fun projects I have dont over the years, eventually I hope to get 
+			around to posting all the source code and schematics for all of them.
+			ElectroSketch 2000 - portable electronic sketch device using an LCD, 
+			FPGA Prototype boards, 
+			FPGA Based General Purpose Graphic LCD Driver
+			Microcontroller Ultrasonic distance measurement device, 
+			Video Frame Grabber
+			Video Generator, Telescope CCD, 
+			Computer controlled HeNe Laser, 
+			Micro-controlled Laser diode driver,
+			CCD Linear Scanner,
+			Microcontroller based Sunrise Sunset Timer (turn lights on and off )based on calculated position of the sun),
+			USB Microcontroller interface,
+			Microcontroller VGA generator,
+			Microcontroller FM Radio,
+			Microcontroller TV Tuner,
+			Homebrew MP3 Player,
+			78 RPM MP3 Ripper,
+			Pong implemented in an FPGA,
+			Topographic Data viewer,
+			Harmonograph Simulator,
+			Dterm RS232 / Telnet Terminal emulator,
+			Mp3 Player,
+			Chess Engine (Chess game),
+			Black hole simulator in java,
+			Code editor,
+			PC based Signal Generator,
+			PC FPGA Oscilloscope,
+			Disk Viewer, 
+			Global Temperature viewer,
+			WMAP data viewer,
+			</p>
 
-<tr><td width="33%" valign="top" bgcolor="#dddddd">
-<font face="CG Times (W1),Times New Roman" size="2">
- <p><img src="Image9.png" width="224" height="168"></p>
- <p><img src="Image8.gif" width="46" height="46"></p>
-</font><font face="Arial" size="2"></font></td>
-<td width="68%" valign="top">
-<b><font size="2"><p>Scanning Tunneling Microscope:</b> Scanning 
-      Tunneling Microscopy (STM) is a process by which atoms may be imaged using 
-      tunneling theory. STM involves the tunneling of electrons through gap from 
-      the tip of the STM to the sample. This can be considered as tunneling 
-      between two metallic electrodes, separated by a vacuum region. The 
-      potential in the vacuum region acts as a barrier to electrons. In this 
-      simplified form, one can apply the solution of the Schrodinger equation, 
-      applied to a rectangular barrier: psi = exp{kx}, where k = sqrt[2m(Vb - 
-      E)/(h2)] where, Vb represents the barrier potential, E is the energy of 
-      the particular state, and h corresponds to the reduced Planck constant. In 
-      General, the tunneling current through the vacuum is proportional to the 
-      separation between the tip and the sample. An atomically sharp tip is 
-      used, the tunneling current from the first atom of the tip can be 
-      determined while the tip is scanned using piezo-electric nano-positioning 
-      probe and the measured tunneling current is numerically processed to an 
-      image.</font></p></td>
-</tr>
-
-<tr><td width="33%" valign="top" bgcolor="#dddddd">
-<font face="Arial" size="2"><p><img src="Image10.gif" width="184" height="136"></font></p></td>
-<td width="68%" valign="top">
-<b><font size="2"><p>NetOpt</b> Network Optimization Platform and <b>NODAL</b> (Network Optimization, Design &amp; 
-    Analysis) Compiler (invented my own language). This is a software IDE 
-    platform specifically designed to explore network optimization algorithms. 
-    A specialized language was developed that allows quick implementation of 
-    various algorithms and also allows simple linking of C or C++ or other 
-    high level modules. </p></font></td>
-</tr>
-
-<tr><td width="33%" valign="top" bgcolor="#dddddd">
-<font face="Arial" size="2"><p><img src="counter.gif" width="184" height="70"></font></p></td>
-<td width="68%" valign="top">
-<b><font size="2"><p>Complete List of Projects:<p></b> 
-    <ol type="1">
-    <lh>Other projects</lh>
-    <li>Embedded Micro-sequencer (FPGA CPU emulation)</li>
-    <li>ElectroSketch 2000 – portable electronic sketch device</li>
-    <li>FPGA Prototype boards</li>
-    <li>FPGA Based General Purpose Graphic LCD Driver</li>
-    <li>Microcontroller Ultrasonic distance measurement device</li>
-    <li>Video Frame Grabber</li>
-    <li>Video Generator</li>
-    <li>Telescope CCD</li>
-    <li>Computer controlled HeNe Laser</li>
-    <li>Micro-controlled Laser diode driver</li>
-    <li>CCD Linear Scanner</li>
-    <li>Microcontroller based Sunrise Sunset Timer (turn lights on and off )based on calculated position of the sun)</li>
-    <li>USB Microcontroller interface</li>
-    <li>Microcontroller VGA generator</li>
-    <li>Microcontroller FM Radio</li>
-    <li>Microcontroller TV Tuner</li>
-    <li>Homebrew MP3 Player</li>
-    <li>78 RPM MP3 Ripper</li>
-    <li>Pong implemented in an FPGA</li>
-    <li>Topographic Data viewer</li>
-    <li>Harmonograph Simulator</li>
-    <li>LatLon to VH Converter</li>
-    <li>Dterm – RS232 / Telnet Terminal emulator</li>
-    <li>Mp3 Player</li>
-    <li>Chess Engine (Chess game)</li>
-    <li>Black hole simulator in java</li>
-    <li>Code editor</li>
-    <li>"Spread grid" Spreadsheet Program</li>
-    <li>PC based Tone Generator</li>
-    <li>PC based Oscilloscope</li>
-    <li>ErlangB calculator</li>
-    <li>Disk Viewer</li>
-    <li>Global Temperature viewer</li>
-    <li>WMAP data viewer</li>
-</ol> 
-</p><b><p>This list can go on and on...</p></b></p>
-</font>
-</td>
-</tr>
-
-</table>
-<b><font size="2"><p>Last updated 10/23/2012</p></b></font>
-</font>
+			
+			
+		</div>
+		<div id="footer">
+			<p><br/>Donnaware International LLC &ndash;&ndash; Dedicated to all things hackable.</p>
+			<p>Page views: <img src="counter.gif"></p>
+			<ul>
+			</ul>
+			<p>Copyright schmoppyright.</p>
+		</div>
+	</div>
 </body>
 </html>
