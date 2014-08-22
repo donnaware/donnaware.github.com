@@ -59,7 +59,7 @@
 		<div id="navigation">
 			<h2>Projects:</h2>
 			<ul>
-				<li><a href="#yPU_SoC">yPU Synthetic SoC</a></li>
+				<li><a href="#yPU_SoC">yPU SoC IDE</a></li>
 				<li><a href="#Modapter">Modapter</a></li>
 				<li><a href="#TabX1">TabX1 Open Tablet</a></li>
 				<li><a href="#zPhone">zPhone (cloud Phone)</a></li>
@@ -75,17 +75,21 @@
 		</div>
 		<div id="extra">
 			<a name="yPU_SoC"></a>
-			<h2>The yPU Synthetic SoC</h2>
-			<p><img src="yPU1.jpg" width="210" height="151" align="left" style="margin: 0px 10px 0px 0px;" >
-			The yPU is a Synthetic System on a Chip is something I have 
-			been working on for a long time, it is a complete computer on an FPGA that can be synthisized, 
-			that is to say, compiled after using a super simple, user friendly GUI to pick all the peripherals
-			that you want on your SoC. You simply drag and drop the desired resources to your target, compile and download
-			and you have the perfect chip for you app. You want 16 RS232 ports, 8 PWM ports, whatever combo you need can be
-			configured specifically for your app. The CPU is the ubiquotous 80186 core, but could be adapted to any. The 
-			peripherals can be any Wishbone compatible IP cores, e.g. LCD driver, Touchscreen, Mouse, Keyboard, 100BaseT, 
-			USB Host port, Wifi, 4G wireless, audio driver, PWM, RS232 ports, GPIO lines, SPI interface, system RAM, 
-			SD card, graphics RAM, etc. (sorry no github files yet, waiting on some legalities).
+			<h2>The yPU SoC Development Environtment</h2>
+			<p><img src="yPU1.png" width="210" height="151" align="left" style="margin: 0px 10px 0px 0px;" >
+			The yPU is an SOC(System on a Chip) development environment. It is a complete computer on an FPGA 
+			that can be designed and synthisized (compiled) after using a super simple, user friendly GUI to 
+			pick all the peripherals that you want on your SoC. You simply drag and drop the desired resources
+			to your target, compile and download and you have the perfect chip for you app. You want 16 RS232 ports
+			for example, or  8 PWM ports, whatever combo you need can be configured specifically for your app. The CPU 
+			is the ubiquotous 80186 core, but could be adapted to any CPU. The peripherals can be any Wishbone 
+			compatible IP cores, e.g. LCD driver, Touchscreen, Mouse, Keyboard, 100BaseT,USB Host port, Wifi, 
+			4G wireless, audio driver, PWM, RS232 ports, GPIO lines, SPI interface, system RAM, SD card, 
+			graphics RAM, etc. (sorry no github files yet, waiting on some legalities). There is also a nice 
+			C Code IDE that generates Arduino like code projects for your SoC design. It is designed to work
+			with a specific board right now but could be adapted to any FPGA board or module.
+			For more info click here to view the PDF describing it: 
+			<a href="ypuProject.pdf">yPU Presentation</a></p>			
 			<br/>		
 
 			<hr/>			
