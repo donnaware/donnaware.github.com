@@ -1,312 +1,282 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>Donnaware</title>
-	
-	<style type="text/css" media="screen">
-		html, body 		{ margin: 0; padding: 0; }
-		body 			{ color: #333; font: 12px Helvetica, Arial, sans-serif; line-height: 18px; }
-		h2				{ color: #333; }
-		a				{ color: #337810; }
-		p				{ margin: 0 0 18px; }
-		#container		{ width: 760px; margin: 0 auto; }
-		
-		/* Header */
-		#header			{ background: #eee; border-bottom: 2px solid #ddd; }
-		#header h1  	{ color: #004b6f; margin: 0 0 3px; padding: 24px 18px 0; }
-		#header p		{ color: #666; font-size: 11px; font-weight: bold; padding: 0 18px; }
-		
-		/* Content Style */
-		#navigation		{ border-bottom: 1px solid #ccc; margin-left: 18px; }
-		#navigation ul	{ padding: 0 18px 9px; }
-		#extra			{  }
-		#extra small	{ font-size: 11px; line-height: 18px; }
-		#content		{ border-bottom: 1px solid #ccc; margin-bottom: 18px; }
-		#content p, #extra p { padding-right: 18px; }
-		
-		/* Content Positioning and Size */
-		#navigation		{ float: left; width: 175px; }
-		#content		{ float: right; width: 540px; }
-		#extra			{ float: right; width: 540px; }		/* Footer */
-		#footer			{ background: #333; border-bottom: 2px solid #999; clear: both; }
-		#footer a		{ color: #eee; }
-		#footer	p		{ color: #ccc; margin: 0; padding: 0 18px 10px; }
-		#footer ul		{ border-bottom: 1px solid #555; list-style: none; margin: 0 18px 6px; padding: 10px 0 6px; }
-		#footer li		{ display: inline; font-size: 11px; font-weight: bold; padding-right: 5px; }
-	</style>
-	<!--[if IE]>
-	<style type="text/css">
-	    #header { margin-bottom: 20px; }
-	</style>
-	<![endif]-->
-</head><body>
-	<div id="container">
-		<div id="header">
-			<h1>Donnaware International LLC</h1>
-			<p class="description">Dedicated to all things hackable.</p>
-		</div>
-		<div id="wrapper">
-			<div id="content">
-				<h2>Donnaware Projects:</h2>
-    			<p>This site contains summary information regarding various projects, inventions and interesting
-				   products developed by Donnaware International LLC. A few selected projects contain links to complete
-				   source code and hardware specifics if applicable. Detailed information is not provided for all 
-				   projects partly because it would take up way to much space and exceed the freebie limit on Github
-				   but mostly because I am too lazy to post everything. </p>
-				</div>
-		</div>
-		<div id="navigation">
-			<h2>Projects:</h2>
-			<ul>
-				<li><a href="#yPU_SoC">yPU SoC IDE</a></li>
-				<li><a href="#Modapter">Modapter</a></li>
-				<li><a href="#TabX1">TabX1 Open Tablet</a></li>
-				<li><a href="#zPhone">zPhone (cloud Phone)</a></li>
-				<li><a href="#4GELDK">4G-LTE SDK</a></li>
-				<li><a href="#FPGASDR">Software Defined Radio</a></li>
-				<li><a href="#Apollo">Apollo Computer Replica</a></li>
-				<li><a href="RotoCell">Wireless Rotary Phone</a></li>
-				<li><a href="STM">Scanning Tunneling Microscope</a></li>
-				<li><a href="NetOpt">Network Optimization Platform</a></li>
-				<li><a href="Other">Other Stuff</a></li>
-				
-			</ul>
-		</div>
-		<div id="extra">
-			<a name="yPU_SoC"></a>
-			<h2>The yPU SoC Development Environtment</h2>
-			<p><img src="yPU1.png" width="210" height="151" align="left" style="margin: 0px 10px 0px 0px;" >
-			The yPU is an SOC(System on a Chip) development environment. It is a complete computer on an FPGA 
-			that can be designed and synthisized (compiled) after using a super simple, user friendly GUI to 
-			pick all the peripherals that you want on your SoC. You simply drag and drop the desired resources
-			to your target, compile and download and you have the perfect chip for you app. You want 16 RS232 ports
-			for example, or  8 PWM ports, whatever combo you need can be configured specifically for your app. The CPU 
-			is the ubiquotous 80186 core, but could be adapted to any CPU. The peripherals can be any Wishbone 
-			compatible IP cores, e.g. LCD driver, Touchscreen, Mouse, Keyboard, 100BaseT,USB Host port, Wifi, 
-			4G wireless, audio driver, PWM, RS232 ports, GPIO lines, SPI interface, system RAM, SD card, 
-			graphics RAM, etc. (sorry no github files yet, waiting on some legalities). There is also a nice 
-			C Code IDE that generates Arduino like code projects for your SoC design. It is designed to work
-			with a specific board right now but could be adapted to any FPGA board or module.
-			For more info click here to view the PDF describing it: 
-			<a href="ypuProject.pdf">yPU Presentation</a></p>			
-			<br/>		
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donnaware</title>
 
-			<hr/>			
-			<a name="Modapter"></a>
-			<h2>The Modapter</h2>
-			<p><img src="modapter.jpg" width="210" height="151" align="left" style="margin: 0px 10px 0px 0px;" >
-			The Modapter is a wireless modem adapter that allows 
-			you to plug in any USB based wireless modem, 4G, 4G LTE, GSM, GPRS, CDMA and etc. and integrate
-			that device into your MCU project even if your MCU does not have an OS or any USB drivers.
-			The Modapter uses the same type of driver as typical Linux boards or Windows based computers
-			use to interface with Wireless Modems but does not require the user to take on the task of 
-			installing managing a full blown Linux Operating System. Instead, with Modapter, most of the 
-			work is done for you, on the Modapter chip, so you can get your project up and on the Mobile 
-			Internet as quicly as possible without fussing with Linux or other operating systems, drivers 
-			or complexities.
-			The Modapter sits between your MCU project and the Wireless Modem and provides a simple interface 
-			to send and receive data over the internet.
-			<br><br>			
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
 
-			<hr/>			
-			<a name="TabX1"></a>
-			<h2>TabX1 Open Tablet Project</h2>
-			<p><img src="board.jpg" width="210" height="170" align="left" style="margin: 0px 10px 0px 0px;">
-			TabX1 is my attempt at creating 
-			a cool Linux based tablet computer. The idea behind it is to create a functional
-			tablet at a very low cost using a low cost low power SoC ARM chip and de-load
-			much of the processing to an attached FPGA chip. <br><br>TabX1 is running Linux 2.6.36 
-			with Busybox Filesystem, X11 Xwindows, Fluxbox desktop and I am using Rox Filer 
-			and Netsurf browser. It has 5.7" Color LCD display with Touchscreen, Mouse, Keyboard,
-			100BaseT, USB Host port, Wifi, 4G wireless, custom graphics driver (implemented on
-			FPGA along with custom audio driver on FPGA), USB device, 4 RS232 ports, 32 GPIO lines
-			Accellerometer, RTC, 64MBytes system RAM, SD card for disk, 8MB graphics RAM, etc 
-			etc..
-			For more information and technical details, visit:
-			<a href="https://github.com/donnaware/TabX1">https://github.com/donnaware/TabX1</a></p>			
-			<br><br>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+      <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#">Donnaware</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://ypumaker.azurewebsites.net/">ypu<span class="sr-only">(current)</span></a> </li>
+        <li><a href="http://iotrees.azurewebsites.net/">iotrees</a> </li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://donnalange.wordpress.com">donnalange</a> </li>
+        <li class="dropdown"> 
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Links...<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://github.com/">Github</a> </li>
+            <li><a href="http://opencores.org/">Opencores</a> </li>
+            <li><a href="https://news.ycombinator.com/">Hacker News</a> </li>
+            <li><a href="https://hackaday.com/">Hack-A-Day</a> </li>
+            <li role="separator" class="divider"></li>
+                        
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
 
-			<hr/>				
-			<a name="zPhone"></a>
-			<h2>The "zPhone Project"</h2>
-			<p><img src="Image11.gif" width="219" height="128">
-			<img src="Image2.gif"  width="208" height="146"></p>
-			<p>The purpose of the "zPhone Project" is to create a hand held Ultra-Thin Client device 
-      		operating over a wireless connection such as WiFi or 3G/4G high speed 
-			wireless. An Ultra-Thin Client (UTC) is a client implemented in hardware. 
-      		A thin client has no intelligence or computing power of its own and hence, 
-      		relies completely on it’s server for operation. </p>
-      		<p>The concept of a UTC is to implement the client completely in hardware, 
-	  		specifically an FPGA to reduce the cost and power consumption of the device.
-	  		A hardware implementation reduces cost since no software licensing, 
-	  		operating system costs or programming costs are incurred for the device itself. </p>
-      		<p>The power consumption is reduced since there is no need for a high speed 
-	  		microprocessor and associated storage, memory and other support peripherals.
-	  		The end result being that battery life is greatly enhanced. The highest power 
-	  		consumption is incurred from the RF section. For this project, an 802.11b 
-	  		mini-PCMIA interface card is selected. The 802.11b has reduced power consumption 
-	  		over 802.11g/n because b uses a CDMA air interface which has a much lower 
-	  		spectral density than the OFDMA scheme used by g/n.</p>			
-			<br><br>
-			
-			<hr/>				
-			<a name="4GELDK"></a>
-			<h2>4G LTE Embedded Linux Developers Kit</h2>
-			<p><img src="linuxboard.jpg" width="184" height="136" align="left" style="margin: 0px 10px 0px 0px;">
-			A Rapid Development and Delivery platform for 4G wireless embedded applications based on 
-			Open Source / Open Hardware embedded Linux Debian Distro running on an Industry Standard
-			ARM9 CPU. provides simple PHP, WEB back end to ease development.</p>
-			<br><br>
+<!-- HEADER -->
+<header>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center">Donnaware International LLC</h1>
+          <p class="text-center">A not very profitable organization dedicated to all things hackable.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- / HEADER --> 
 
-			<hr/>				
-			<a name="FPGASDR"></a>
-			<h2>FPGA Based Software Defined Radio</h2>
-			<p><img src="Image5.png" width="203" height="151">
-			<img src="Image3.gif" width="95" height="67">
-			<img src="Image4.gif" width="99" height="75">
-			</p>
-			<p>An FPGA consists of a large array of Logic Elements (LE). Each LE contains basic 
-      		building block of digital logic circuits (AND, OR, Flip Flop, etc). These 
-      		arrays can be in the range of 10K – 100K or more LE’s. Other types of 
-      		blocks may also be on the FPGA chip such as dedicated multipliers 
-      		(important for DSP applications) or RAM and sometimes embedded 
-      		microprocessor (e.g. ARM). All of the blocks can be arbitrarily 
-      		interconnected to each other via the re-programmable interconnection. The 
-      		challenge for the designer is to determine the optimal way to interconnect 
-      		these blocks to achieve the design goal. Many computer aided tools have 
-      		been developed to assist in this effort. </p>
-      		<p>In this project, an SDR (Software Defined Radio) was simulated and synthesized 
-	  		using Verilog HDL and implemented in a prototype set up. The design demonstrated 
-	  		OFDM modulation scheme to transmit video images and further demonstrated that is
-	  		software reconfigurable by altering in software to transmit NTSC video over standard 
-	  		broadcast.  This project was used for Masters EE program project.</p>
+<!--  SECTION-1 -->
+<section>
+  <div class="row">
+    <div class="text-center">
+      <pre class=""><em>This github site is the central repository for various projects from donnaware, I do not everything up to date or loaded here 
+      because it would be a big hassle but I present some of my favorites and post updates and source files from time to time when 
+      there is interest or if I feel like it.
+      </em></pre>
+    </div>
+    <div class="col-lg-12 page-header text-center">
+      <h2>COOL PROJECTS FROM DONNAWARE</h2>
+    </div>
+  </div>
+  <div class="container ">
+    <div class="row">
+      <div class="col-lg-4 col-sm-12 text-center"> <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/codeditor.png" data-holder-rendered="true">
+        <h3>ESP8266 SDK</h3>
+        <p>EASY PEASY ESP8266 SDK This is a super simple to use SDK for the ESP8266. This SDK is designed to work on Windows 7
+        or higher machines without the need to install anything, no Virtual Machines, No Linux or anything else, just download 
+        and unzip to a directory and away you go. It includes some good example apps with source code.
+        </p>
+        <p>Check out more details here: 
+        <a href="https://donnaware.github.io/ESP8266/" title="ESP8266 SDK">ESP8266 SDK</a>
+        </p>
+      </div>
+      <div class="col-lg-4 col-sm-12 text-center"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/yPU1.jpg" data-holder-rendered="true">
+        <h3>The yPU SoC Development Environtment</h3>
+        <p>Synthetic System on a Chip generator, complete CPU on an FPGA that can be synthisized, 
+        after using a super simple, user friendly GUI to pick all the peripherals that you want on your SoC. Simply drag 
+        and drop the desired resources to your target, compile and download and you have the perfect chip for you app. any combination of RS232 ports, PWM, 
+        LCD, GPIO, SPI, SD card and so on. (sorry no github files yet, 
+        waiting on some legalities). Try it and see: <a href="http://ypumaker.azurewebsites.net/" target="ypu maker">ypu maker</a> 
+      </p>        
+      </div>
+      <div class="col-lg-4 col-sm-12 text-center"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/Image2.gif" data-holder-rendered="true">
+        <h3>zPhone Project</h3>
+		<p>The purpose of the "zPhone Project" is to create a hand held Ultra-Thin Client device 
+    	operating over a wireless connection such as WiFi or 4G. An Ultra-Thin Client (UTC) is 
+        a client implemented in hardware (FPGA). thin client has no intelligence or computing power of 
+        its own and hence, relies completely a server for operation. Because the  UTC is 
+        completely hardware, the cost and power consumption of the device are drastically reduced 
+        (no software licensing for OS or programming), everything runs completely virtualized in the cloud!
+         </p>
+         <br>
+      </div>
+      <div class="col-lg-4 col-sm-12 text-center"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/Image9.png" data-holder-rendered="true">
+        <h3>Scanning Tunneling Microscope</h3>
+        <p>A device by which atoms may be imaged using the Quantum Tunneling effect. STM involves the tunneling of electrons through 
+        gap from the tip of the STM to the sample. This can be considered as tunneling between two metallic electrodes, 
+		separated by a vacuum region. The potential in the vacuum region acts as a barrier to electrons. In this 
+      	simplified form, one can apply the solution of the Schrodinger equation, applied to a rectangular barrier: psi = exp{kx}, 
+		where k = sqrt[2m(Vb - E)/(h2)] where, Vb represents the barrier potential, E is the energy of the particular state, and 
+        h corresponds to the reduced Planck constant. In General, the tunneling current through the vacuum is proportional to the 
+      	separation between the tip and the sample. An atomically sharp tip is used, the tunneling current from the first atom of the tip can be 
+   		determined while the tip is scanned using piezo-electric nano-positioning probe and the measured tunneling current is numerically processed to an 
+   		image. ---><img src="images/Image8.gif" width="46" height="46">
+        </p>
+      </div>
+      <div class="col-lg-4 col-sm-12 text-center"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/Image6.gif" data-holder-rendered="true">
+        <h3>Zero Board Computer</h3>
+        <p>ZBC is a PC-AT Clone implemented as anSoC (System on a Chip) using the Altera Cyclone III FPGA. ZBC 
+    	is intended to be fun and educational and able to run DOS and uCLinux. The motivation for this project was to 
+        emulate the Intel 80186 CPU using Verilog HDL and to synthesis a working computer by utilizing custom and 
+      	open source (<a href="http://www.opencores.org/">www.opencores.org</a> peripheral IP Cores (Intellectual Property) 
+        to form a complete bootable OS from an SD Card rather than a hard drive. 
+        </p> 
+	  	<p>The completed project also implemented complete TCP/IP,UDP,HTTP,FTP,ARP,ICMP 
+	  	stack in a driver called TinySOCK I developed using nothing but RFC's.
+        </p>
+        <p>Check out all the source code here:
+  		<a href="http://github.com/donnaware/ZBC---The-Zero-Board-Computer">The-Zero-Board-Computer</font></a>
+        </p>
+      </div>
+      <div class="col-lg-4 col-sm-12 text-center"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/Image7.gif" data-holder-rendered="true">
+        <h3>Roto-Cell 2000</h3>
+        <p>The Roto-Cell 2000 is just a fun project that uses an old style Rotary Phone with the original internal 
+        components removed and replaced with a cell phone bluetooth adapter mounted on a PCB board and a 
+        micro-controller to interface the old style dialer and ringer. The microcontroller translates the 
+        rotary dialed digits into RS232 commands that are sent to the Bluetooth adapter to make a call and 
+        also receives messages from the Bluetooth adapter when a call comes in and rings the original bell. 
+        </p>
+        <p>The Audio interface converts the old style carbon mic in the phone to the necessary levels to interface to 
+        a PCM Codec implemented on an FPGA along with the Bluetooth stack. You just pair it with whatever cell phone 
+        you want, you put your phone in your pocket and now you have yourself a wireless Rotary phone! 
+        For this project I used an old timey rotary phone that I bought at a garage sale.
+		</p>
+      </div>
+    </div>
+ 
+    <div class="row">
+      <div class="col-xs-6 col-lg-4">
+        <h3>Apollo Guidance Computer Replica</h3>
+        <p> <i class="icon-desktop "></i>The AGC (Apollo Guidance Computer) was a very early computer, 
+        designed in 1964, it was the first to use Integrated Circuits and the first modern embedded 
+        processor. Implemented using FPGA (Field Programmable Gate Array) that can think 
+	  	of that as the equivalent of thousands of the TTL chips that is endlessly and completely 
+  		reconfigurable.  I used the Altera Cyclone FPGA which has a lot of memory right on the FPGA. 
+  		I also developed the user interface using a custom LCD controller using a CLPD and a 
+  		Microcontroller with a USB interface so code can be downloaded from your PC. 
+    	You can check out the source on this one at:
+        <a href="https://github.com/donnaware/AGC">AGC</a> 
+        </p>
+      </div>
+      <div class="col-xs-6 col-lg-4">
+        <h3>FPGA SDR</h3>
+        <p> <i class="icon-desktop "></i> 
+        A Software Defined Radio was simulated and synthesized  using Verilog HDL and implemented 
+        in a prototype set up. The design demonstrated OFDM modulation scheme to transmit video 
+        images and further demonstrated that is software reconfigurable by altering in software to 
+        transmit NTSC video over standard broadcast or FM Radio. This project was used for Masters EE 
+        program project and was implemented using an FPGA and an embedded MCU.
+        </p><br><br><br><br><br>
+      </div>
+      <div class="col-xs-6 col-lg-4">
+        <h3>TabX1 Open Tablet Project</h3>
+        <p> <i class="icon-desktop "></i> 
+		TabX1 is an open source Linux based tablet computer. The idea behind it is to create a functional
+		tablet at a very low cost using a low cost low power SoC ARM chip and de-load much of the processing 
+        to an attached FPGA chip. TabX1 is running Linux 3 with Busybox Filesystem, X11 Xwindows, Fluxbox 
+        desktop and I am using Rox Filer and Netsurf browser. It has 5.7" Color LCD display with 
+        Touchscreen, Mouse, Keyboard, 100BaseT, USB Host port, Wifi, 4G wireless, custom graphics 
+        driver (implemented on FPGA along with custom audio driver on FPGA), USB device, 4 RS232 ports, 
+        32 GPIO lines Accellerometer, RTC, 64MBytes system RAM, SD card for disk, 128MB graphics RAM
+		Technical details:
+		<a href="https://github.com/donnaware/TabX1">TabX1</a>
+        </p><br>
+      </div>
 
-			<hr/>				
-			<a name="Apollo"></a>
-			<h2>Apollo Guidance Computer Replica</h2>
-			<p><img src="Image12.jpg" width="201" height="151"></p>
-			<p>The AGC (Apollo Guidance Computer) was a very early computer, designed in 1964, it was 
-	  		the first to use Integrated Circuits and the first modern embedded processor. When I was 
-	  		growing up, about 11 years old, I remember the Apollo program was fascinating to me and 
-	  		I had my eyes glued to the TV for days on end. The Moon landing made such a lasting 
-	  		impression on me that it is why I decided to go to engineering school and get a degree 
-	  		in Electrical Engineering. I used an FPGA (Field Programmable Gate Array) that can think 
-	  		of that as the equivalent of thousands of the TTL chips that is endlessly and completely 
-	  		reconfigurable.  I used the Altera Cyclone FPGA which has a lot of memory right on the FPGA. 
-	  		I also developed the user interface using a custom LCD controller using a CLPD and a 
-	  		Microcontroller with a USB interface so code can be downloaded from your PC. 
-     		<a href="https://github.com/donnaware/AGC">https://github.com/donnaware/AGC</a></p>
+    </div>
+  
+  <!-- /container -->
+  
+  <div class="container">
+  <div class="jumbotron">
+      <div class="row">
+        <p><i><small>
+		There are a ton of other fun projects I have dont over the years, eventually I hope to get around to posting all 
+        the source code and schematics for all of them. ElectroSketch 2000 - portable electronic sketch device using an LCD, 
+        FPGA Prototype boards, FPGA Based General Purpose Graphic LCD Driver Microcontroller Ultrasonic distance measurement 
+        device, Video Frame Grabber Video Generator, Telescope CCD, Computer controlled HeNe Laser, Micro-controlled Laser 
+        diode driver, CCD Linear Scanner, Microcontroller based Sunrise Sunset Timer (turn lights on and off )based on calculated 
+        position of the sun), USB Microcontroller interface, Microcontroller VGA generator, Microcontroller FM Radio, 
+        Microcontroller TV Tuner, Homebrew MP3 Player, 78 RPM MP3 Ripper, Pong implemented in an FPGA, Topographic Data viewer, 
+        Harmonograph Simulator, Dterm RS232 / Telnet Terminal emulator, Mp3 Player, Chess Engine (Chess game), 
+        Black hole simulator in java, Code editor, PC based Signal Generator, PC FPGA Oscilloscope, 
+        Disk Viewer, Global Temperature viewer, WMAP data viewer, and on and on.        
+        </small></i></p>
+      </div>
+    </div>
+  </div>  
 
-			<hr/>				
-			<a name="ZBC"></a>
-			<h2>The Zero Board Computer</h2>
-			<p><img src="Image6.gif" width="212" height="141"></p>
-			<p>ZBC is a PC-XT SoC (System on a Chip) that is implemented on an Altera Cyclone III FPGA. ZBC 
-      		is intended to be fun and educational and able to run DOS and uCLinux. The 
-      		motivation for this project was to emulate the Intel 80186 CPU using 
-      		Verilog HDL and to synthesis a working computer by utilizing custom and 
-      		open source (<a href="http://www.opencores.org/">www.opencores.org</a>
-	  		peripheral IP Cores (Intellectual Property) to form a complete bootable SoC. 
-	  		The completed project also implemented complete TCP/IP,UDP,HTTP,FTP,ARP,ICMP 
-	  		stack in a driver called TinySOCK developed by me. 
-	  		<a href="http://github.com/donnaware/ZBC---The-Zero-Board-Computer">http://github.com/donnaware/ZBC---The-Zero-Board-Computer</font></a>
-			</p>
+  <!-- / CONTAINER--> 
 
-			<hr/>	
-			<a name="RotoCell"></a>						
-			<h2>Roto-Cell 2000:</h2>
-			<p><img src="Image7.gif" width="175" height="151"></p>
-			<p>The Roto-Cell 2000 is just a fun project that uses an old style Rotary 
-			Phone with the original internal components removed and replaced with a cell phone bluetooth 
-			adapter mounted on a PCB board and a micro-controller to interface the old style dialer and 
-			ringer. The microcontroller translates the rotary dialed digits into RS232 commands that are 
-			sent to the Bluetooth adapter to make a call and also receives messages from the Bluetooth adapter
-			when a call comes in and rings the ringer. The Audio interface converts the old style carbon
-			mic in the phone to the necessary levels to interface to the Bluetooth Module. You just pair
-			it with whatever cell phone you want, you put your phone in your pocket and now you have yourself
-			a wireless Rotary phone! For this project I used an old timey rotary phone that I bought at a 
-			garage sale, but I have also seen them available online.  
-			</p>
+  <div class="container">  
+    <div class="row">
+      <div class="col-lg-12 page-header text-center">
+        <h2>GREAT QUOTES</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 col-lg-6">
+          <blockquote>
+          <p>"A coward is incapable of exhibiting love; it is the prerogative of the brave."</p>
+          <small><cite title="Mahatma Gandhi">Mahatma Gandhi</cite></small>
+          </blockquote>
+      </div>
+      <div class="col-6 col-lg-6">
+        <blockquote>
+          <p>"Art teaches nothing, except the significance of life." </p>
+          <small><cite title="Henry Miller">Henry Miller</cite></small></blockquote>
+          <br><br>
+      </div>
+      <div class="col-6 col-lg-6">
+        <blockquote>
+          <p>"Courage is the price that life extracts for granting peace with yourself."</p>
+          <small><cite title="Amelia Earhart">Amelia Earhart</cite></small></blockquote>
+      </div>
+      <div class="col-6 col-lg-6">
+        <blockquote>
+          <p>"Imagination is more important than intelligence."</p>
+          <small><cite title="Albert Einstein">Albert Einstein</cite></small></blockquote>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- / CONTAINER--> 
+    
+</section>
+<div class="well"> </div>
 
-			<hr/>	
-			<a name="STM"></a>						
-			<h2>Scanning Tunneling Microscope:</h2>
-			<p><img src="Image9.png" width="224" height="168"></p>
-			<p><img src="Image8.gif" width="46" height="46"></p>
-			<p><b>Scanning Tunneling Microscopy (STM)</b> is a device by which atoms may be imaged using 
-      		Quantum Tunneling. STM involves the tunneling of electrons through gap from the tip of the 
-			STM to the sample. This can be considered as tunneling between two metallic electrodes, 
-			separated by a vacuum region. The potential in the vacuum region acts as a barrier to electrons. In this 
-      		simplified form, one can apply the solution of the Schrodinger equation, 
-      		applied to a rectangular barrier: psi = exp{kx}, 
-			where k = sqrt[2m(Vb - E)/(h2)] where, Vb represents the barrier potential, E is the energy of 
-			the particular state, and h corresponds to the reduced Planck constant. In 
-      		General, the tunneling current through the vacuum is proportional to the 
-      		separation between the tip and the sample. An atomically sharp tip is 
-      		used, the tunneling current from the first atom of the tip can be 
-      		determined while the tip is scanned using piezo-electric nano-positioning 
-      		probe and the measured tunneling current is numerically processed to an 
-      		image.</p>
-
-			<hr/>	
-			<a name="NetOpt"></a>							
-			<h2>NetOpt &ndash; Network Optimization Platform:</h2>
-			<p><img src="Image10.gif" width="184" height="136"></p>
-			<p><b>NetOpt</b> Network Optimization Platform and <b>NODAL</b> (Network Optimization, Design &amp; 
-    		Analysis) Compiler (invented my own language). This is a software IDE 
-    		platform specifically designed to explore network optimization algorithms. 
-    		A specialized language was developed that allows quick implementation of 
-    		various algorithms and also allows simple linking of C or C++ or other 
-    		high level modules. </p>
-
-
-			<hr/>	
-			<a name="Other"></a>				
-			<h2>Other stuff:</h2>
-			<p>There are a ton of other fun projects I have dont over the years, eventually I hope to get 
-			around to posting all the source code and schematics for all of them.
-			ElectroSketch 2000 - portable electronic sketch device using an LCD, 
-			FPGA Prototype boards, 
-			FPGA Based General Purpose Graphic LCD Driver
-			Microcontroller Ultrasonic distance measurement device, 
-			Video Frame Grabber
-			Video Generator, Telescope CCD, 
-			Computer controlled HeNe Laser, 
-			Micro-controlled Laser diode driver,
-			CCD Linear Scanner,
-			Microcontroller based Sunrise Sunset Timer (turn lights on and off )based on calculated position of the sun),
-			USB Microcontroller interface,
-			Microcontroller VGA generator,
-			Microcontroller FM Radio,
-			Microcontroller TV Tuner,
-			Homebrew MP3 Player,
-			78 RPM MP3 Ripper,
-			Pong implemented in an FPGA,
-			Topographic Data viewer,
-			Harmonograph Simulator,
-			Dterm RS232 / Telnet Terminal emulator,
-			Mp3 Player,
-			Chess Engine (Chess game),
-			Black hole simulator in java,
-			Code editor,
-			PC based Signal Generator,
-			PC FPGA Oscilloscope,
-			Disk Viewer, 
-			Global Temperature viewer,
-			WMAP data viewer,
-			</p>
-
-			
-			
-		</div>
-		<div id="footer">
-			<p><br/>Donnaware International LLC &ndash;&ndash; Dedicated to all things hackable.</p>
-			<p>Page views: <img src="counter.gif"></p>
-			<ul>
-			</ul>
-			<p>Copyright schmoppyright.</p>
-		</div>
-	</div>
+<!-- FOOTER -->
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Donnaware International LLC &ndash;&ndash; © Copyright schmoppyright.</p>
+        <br>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- / FOOTER --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
 </body>
 </html>
